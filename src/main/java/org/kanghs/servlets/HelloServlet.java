@@ -1,13 +1,19 @@
 package org.kanghs.servlets;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * 서블릿은 데이터 처리만 하고 페이지 출력은 JSP와 같은 뷰 기술로 넘긴다.
+ * 
+ * @author kanghs
+ */
+@WebServlet("/helloMvc")
 public class HelloServlet extends HttpServlet {
 
 	@Override
